@@ -36,7 +36,10 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/main.o \
-	${OBJECTDIR}/socket/client.o
+	${OBJECTDIR}/socket/client.o \
+	${OBJECTDIR}/socket/epoll_client.o \
+	${OBJECTDIR}/socket/poll_client.o \
+	${OBJECTDIR}/socket/select_client.o
 
 
 # C Compiler Flags
@@ -72,6 +75,21 @@ ${OBJECTDIR}/socket/client.o: socket/client.cpp
 	${MKDIR} -p ${OBJECTDIR}/socket
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/socket/client.o socket/client.cpp
+
+${OBJECTDIR}/socket/epoll_client.o: socket/epoll_client.cpp
+	${MKDIR} -p ${OBJECTDIR}/socket
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/socket/epoll_client.o socket/epoll_client.cpp
+
+${OBJECTDIR}/socket/poll_client.o: socket/poll_client.cpp
+	${MKDIR} -p ${OBJECTDIR}/socket
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/socket/poll_client.o socket/poll_client.cpp
+
+${OBJECTDIR}/socket/select_client.o: socket/select_client.cpp
+	${MKDIR} -p ${OBJECTDIR}/socket
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/socket/select_client.o socket/select_client.cpp
 
 # Subprojects
 .build-subprojects:

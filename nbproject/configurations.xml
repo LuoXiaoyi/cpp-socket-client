@@ -5,6 +5,9 @@
                    displayName="Header Files"
                    projectFiles="true">
       <itemPath>socket/client.h</itemPath>
+      <itemPath>socket/epoll_client.h</itemPath>
+      <itemPath>socket/poll_client.h</itemPath>
+      <itemPath>socket/select_client.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -14,7 +17,10 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>socket/client.cpp</itemPath>
+      <itemPath>socket/epoll_client.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
+      <itemPath>socket/poll_client.cpp</itemPath>
+      <itemPath>socket/select_client.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -44,6 +50,18 @@
       </item>
       <item path="socket/client.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="socket/epoll_client.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="socket/epoll_client.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="socket/poll_client.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="socket/poll_client.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="socket/select_client.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="socket/select_client.h" ex="false" tool="3" flavor2="0">
+      </item>
     </conf>
     <conf name="Release" type="1">
       <toolsSet>
@@ -70,6 +88,18 @@
       <item path="socket/client.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="socket/client.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="socket/epoll_client.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="socket/epoll_client.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="socket/poll_client.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="socket/poll_client.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="socket/select_client.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="socket/select_client.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>
